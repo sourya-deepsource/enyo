@@ -5,8 +5,7 @@ require('enyo');
 * @module enyo/BooleanBinding
 */
 
-var
-	kind = require('./kind');
+var kind = require('./kind');
 
 var
 	Binding = require('./Binding');
@@ -33,6 +32,5 @@ module.exports = kind(
 	* @private
 	*/
 	transform: function (value) {
-		return !! value;
-	}
+		return !! value;}
 });
