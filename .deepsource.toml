@@ -10,5 +10,5 @@ enabled = true
   environment = ["nodejs"]
 
 [[transformers]]
-name = "prettier"
+name = "standardjs"
 enabled = true
