@@ -402,3 +402,5 @@ var Ajax = module.exports = kind(
 		}
 	}
 });
+
+console.log("Heelo");
