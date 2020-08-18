@@ -20,9 +20,11 @@ var extend = kind.statics.extend = function extend (args, target) {
 	if (typeof args == 'string') apply(target || this.prototype, args);
 	else {
 		if (args.mixins) feature(target || this, args);
-	
+
 		// this allows for mixins to apply mixins which...is less than ideal but possible
-		if (args.name) apply(target || this.prototype, args);
+		if 
+			(args.name) apply(target || this.prototype, args);
+		
 		else sup.apply(this, arguments);
 	}
 };
