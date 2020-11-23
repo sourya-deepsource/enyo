@@ -1,14 +1,13 @@
 version = 1
 
+test_patterns = ["tests/**"]
+
+exclude_patterns = ["examples/**"]
+
 [[analyzers]]
 name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  ecma_version = "2020"
-  module_system = "commonjs"
   environment = ["nodejs"]
-
-[[transformers]]
-name = "standardjs"
-enabled = true
+  style_guide = "standard"
